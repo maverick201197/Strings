@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int check_brackets(char ch)
+{
+    if(ch == '(' || ch == ')')
+    return 1;
+    else
+    return 0;
+}
+int main()
+{
+    string str1;
+    cout<<"enter a string" <<endl;
+    cin>>str1;
+    int j=0;
+    int i;
+    int temp;
+    int length = 0;
+    while(str1[length])
+    length++;
+    char str2[length];
+    for(i=0; i<length; i++)
+    {
+    temp = check_brackets(str1[i]);
+    if(temp == 0)
+    {
+        str2[j] += str1[i];
+        j++;
+    }
+    }
+    cout<<str2;
+    return 0;
+}
+
+
+enter a string
+(x+y)-z
+x+y-z
