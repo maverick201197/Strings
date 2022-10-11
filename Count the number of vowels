@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char str[100];
+    cout<<"enter a string" <<endl;
+    cin>>str;
+    char *ptr;
+    int cntv, cntc;
+    ptr=str;
+    cntv=cntc=0;
+    while(*ptr!='\0')
+    {
+        if(*ptr=='a' || *ptr=='e' || *ptr=='i' || *ptr=='o' || *ptr=='u' || *ptr=='A' || *ptr=='E' || *ptr=='I' || *ptr=='O' || *ptr=='U')
+        cntv++;
+        else
+        cntc++;
+        ptr++;
+    }
+    cout<<"Total number of vowels is : " << " " << cntv <<endl;
+    cout<<"Total number of consonants is : " << " " << cntc <<endl;
+    return 0;
+}
+
+aakriti
+Total number of vowels is :  4
+Total number of consonants is :  3
