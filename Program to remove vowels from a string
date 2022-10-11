@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int check_vowel(char ch)
+{
+    if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch =='O' || ch == 'U')
+    return 1;
+    else
+    return 0;
+}
+int main()
+{
+    char str1[100];
+    int j=0;
+    int i;
+    cout<<"enter a string" <<endl;
+    cin>>str1;
+    int length = 0;
+    while(str1[length])
+    length++;
+    char str2[length];
+    for(i=0; i<length; i++)
+    {
+        int temp = check_vowel(str1[i]);
+            if(temp==0)
+            {
+                str2[j]+= str1[i];
+                j++;
+            }
+        }
+        cout<<str2<<endl;
+        return 0;
+    }
+    
+    
+    enter a string
+faceprep
+fcprp
+    
