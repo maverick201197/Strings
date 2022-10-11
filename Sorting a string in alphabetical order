@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char str1[100];
+    cout<<"enter a string"<<endl;
+    cin>>str1;
+    char temp;
+    int i, j;
+    int n;
+    n = strlen(str1);
+    for(i=0; i<n-1; i++)
+    {
+        for(j=i+1; j<n; j++)
+        {
+            if(str1[i] > str1[j])
+            {
+                temp = str1[i];
+                str1[i] = str1[j];
+                str1[j] = temp;
+            }
+        }
+    }
+    cout<<"The sorted string is : " <<" " << str1 << endl;
+    return 0;
+}
+
+enter a string
+aakriti
+The sorted string is :  aaiikrt
