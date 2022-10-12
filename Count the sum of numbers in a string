@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char str[100];
+    cout<<"enter a string" <<endl;
+    cin>>str;
+    int i, sum = 0;
+    for(i=0; str[i]!='\0'; i++)
+    {
+        if((str[i] >= '0') && ( str[i] <= '9'))
+        {
+            sum = sum + (str[i] - '0');
+        }
+    }
+    cout<<"sum of numbers in a string is : " << sum << endl;
+    return 0;
+}
+
+enter a string
+Aak12k10
+sum of numbers in a string is : 4
